@@ -1,36 +1,49 @@
-# itg-konecna
-Textová adventura v Pythonu odehrávající se v pražském metru. Čtvrtletní projekt z informatiky.
+# Konečná
 
-Vytvořil **Oliver Steiner**.
-
-## Spuštění
-
-```
-python3 main.py
-```
-
-Stačí čistý Python 3, žádné knihovny se instalovat nemusí. Hra používá barvy a mazání obrazovky, takže ji spouštěj v normálním terminálu (macOS, Linux, Windows Terminal nebo terminál ve VS Code).
+Textová adventura odehrávající se v opuštěném pražském metru.
 
 ## O hře
 
-Probudíš se na lavičce na konečné. Poslední vlak už odjel, stanice je zamčená, proud nejde a v tunelech je něco špatně. Musíš se dostat ven, dokud ti nedojde světlo.
+Probouzíš se na lavičce v opuštěné stanici metra. Poslední vlak už odjel, stanice je zamčená, nefunguje elektřina a v tunelech se skrývá něco podivného. Tvým úkolem je prozkoumat stanici, najít potřebné předměty a dostat se ven dříve, než ti dojde baterie ve svítilně.
 
-- **Cíl**: pod popisem místa vždycky vidíš řádek CÍL, který ti poradí, co dál.
-- **Světlo**: každá cesta do tmavého místa vybije svítilnu o 10 %. Začínáš se 70 %. Když jdeš do tmy s vybitou svítilnou, něco tě tam chytí. Po zapnutí proudu je všude světlo.
-- **Inventář**: uneseš jen 6 věcí. Když máš plné ruce, spoj některé věci dohromady.
-- **Konce**: hra má 3 různé konce a jednu prohru.
+Hra nabízí **3 různé konce** a jeden způsob, jak skončit ve tmě.
+
+## Technologie
+
+- **Programovací jazyk:** Python 3
+- **Typ hry:** Textová adventura (konzolová hra)
+
+## Spuštění hry
+
+1. Ujisti se, že máš nainstalovaný Python 3.
+2. Stáhni nebo naklonuj tento repozitář.
+3. Otevři terminál ve složce projektu.
+4. Spusť hru příkazem:
+
+```bash
+python main.py
+```
 
 ## Ovládání
 
-Hra vypíše očíslovaný seznam toho, co můžeš udělat. Napiš číslo a zmáčkni Enter. Když napíšeš něco špatně, hra se jen zeptá znovu.
+Hra se ovládá pomocí číselných voleb v terminálu.
 
-Hru ukončíš volbou **Ukončit hru** a potvrzením `a`. Novou hru začneš tak, že spustíš `main.py` znovu.
+- Zadej číslo požadované akce.
+- Potvrď výběr klávesou `Enter`.
+- Pro sbírání předmětů vyber možnost `Vzít`.
+- Pro přesun mezi místnostmi vyber možnost `Jít`.
+- Některé předměty lze kombinovat a používat k řešení hádanek.
+- Hru můžeš kdykoliv ukončit výběrem možnosti `Ukončit hru`.
 
-## Konce
+### Herní mechaniky
 
-> Pozor, spoilery!
+- **Baterie:** Každý vstup do temné místnosti spotřebuje 10 % baterie.
+- **Inventář:** Můžeš nést maximálně 6 předmětů.
+- **Předměty:** Některé předměty je potřeba kombinovat, aby vznikly nové.
+- **Cíl:** Aktuální cíl se zobrazuje přímo ve hře a napovídá, co dělat dál.
 
-1. **Hlavní východ** (nejlepší konec): oprav pojistku, vlož ji v dispečinku do skříně a ve vestibulu zmáčkni tlačítko u rolety.
-2. **Další stanice**: spoj lano a hák na kotvičku a v zavaleném tunelu vylez přes suť. Dojdeš tunelem do další stanice, kde tě čeká nepříjemné překvapení.
-3. **Konečná**: v zavaleném tunelu vypáčíš páčidlem poklop a nastoupíš do tajemného vlaku. Všechno začne znovu na lavičce.
-4. **Prohra - tma**: když jdeš do tmavého místa s vybitou svítilnou, něco tě ve tmě chytí.
+## Autor
+
+**Oliver Steiner**
+
+GitHub: [@JsemOlik](https://github.com/JsemOlik)
